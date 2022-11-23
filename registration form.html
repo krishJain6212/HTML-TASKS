@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>registration form</title>
+</head>
+<body>
+	<h3 align="center"> RREGISTRATION FORM </h3>
+	<center>
+<form action="/Users/krishjain/Desktop/HTML-TASKS/table 3.html"  method="post" style="background-color: lightcyan;">
+	<select name="country" id="country">
+		<option value="" hidden>---select country---</option>
+		<option value="india">india</option>
+		<option value="united states">united states</option>
+		<option value="pakistan">pakistan</option>
+		<option value="bangladesh">bangladesh</option>
+		<option value="russia">russia</option>
+		<option value="nepal">nepal</option>
+		<option value="malaysia">malaysia</option>
+		<option value="bangkok">bangkok</option>
+	</select> <br><br>
+      Name:<input type="text" pattern="[a-z,A-Z]{3,16}" name="">	<br><br>
+      Email:<input type="text" pattern="[nirav.tops]+@[a-z0-9.-]+\.[a-z]{2,}$" > <br><br>
+      Password:<input type="password" maxlength="8" > <br><br>
+    Gender:<input type="radio" name="gender">male
+           <input type="radio" name="gender">female
+           <input type="radio" name="gender">others
+                             <br><br>
+    Language:<input type="checkbox" name="">Hindi<input type="checkbox" name="">Gujrati
+    <input type="checkbox" name="">English
+    <input type="checkbox" name="">Tamil<br><br>
+    color:<input type="color" name=""><br><br>
+    Date:<input type="date" name=""><br><br>
+    Date-TIME:<input type="datetime-local" name=""><br><br>
+    Quantity:<input type="number" max="5" min="1" name=""><br><br>
+    Upload File:<input type="file" multiple name=""><br><br>
+    <textarea rows="10" cols="50"></textarea><br><br>
+    <input type="submit" name=""><br><br>
+    <input type="reset" name="">
+</form>
+</center>
+</body>
+</html>
