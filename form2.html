@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>REGISTRATION FORM</title>
+</head>
+<body style="background-color: #D8FE7E;">
+<center>
+	<h3 style="color: brown;">Personal details</h3>
+	<form>
+		Name:<input type="text" pattern="[A-Za-z] {16}" required  name=""><br><br>
+		Password:<input type="text" name="" required maxlength="6"><br><br>
+		E-Mail:<input type="text" name="" required><br><br>
+		Gender:<input type="radio" name="gender">Male
+		       <input type="radio" name="gender">Female
+		       <input type="radio" name="gender">Others<br><br>
+		Contact:<select>
+			<option>+91</option>
+			<option>+1</option>
+			<option>+65</option>
+			<option>+92</option>
+		</select> 
+		<input type="text"  maxlength="10" name=""><br><br>
+		<h3 style="color:brown;">Educational Qualification</h3>
+		Qualification:<select required>
+			<option hidden>Select your Qualifiaction</option>
+			<option>10th pass</option>
+			<option>12th pass</option>
+			<option>Graduate</option>
+			<option>Post Graduate</option>
+			<option>Doctorate</option>
+		</select><br><br>
+		Degree:<select required>
+			<option hidden>Select your Degree</option>
+			<option>B.A.</option>
+			<option>B.SC.</option>
+			<option>B.TECH.</option>
+			<option>BCA</option>
+			<option>M.A.</option>
+			<option>M.SC.</option>
+			<option>MCA</option>
+			<option>MBA</option>
+		</select><BR><BR>
+		Hobbies:<input type="checkbox" name="">Playing Chess
+	            <input type="checkbox" name="">Reading Books
+	            <h3 style="color:brown;">Adress</h3>
+	            <textarea required cols="50" rows="10"></textarea><br><br>
+	            Attatch Resume:<input type="file" name=""><br><br>
+	            <input type="submit" name="">
+	            <input type="reset" name="">
+
+
+
+
+	</form>
+</center>
+</body>
+</html>
