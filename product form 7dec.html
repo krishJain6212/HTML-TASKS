@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PRODUCT ORDER FORM</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR49xy0EBFUWpAXpuZi74YUbWxHQ88HW1iSz7Qxl4sppw&s);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+		h1{
+			text-align: center;
+			margin-top: 20px;
+			color: #fff;
+			font-size: 60px;
+			font-weight: 2;
+			background: rgba(0, 0, 0, 0.7);
+		}
+
+		.table{
+			width: 1320px;
+			height: 670px;
+			margin: auto;
+			margin-top: 30px;
+			padding: 40px 40px;
+			background: rgb(41, 89, 89);
+			opacity: 0.7;
+			border: 2px solid #fff;
+			box-sizing: border-box;
+			
+		}
+		.font{
+			width: 400px;
+		    font-size: 20px;
+		    color: #fff;
+		    background: rgb(41, 89, 89);
+		    padding: 2px;
+
+		}
+		.input{
+			height: 40px;
+			width: 300px;
+			font-size: 16px;
+			background: rgb(41, 89, 89);
+			border: 1px solid #fff;
+			color: #fff;
+		}
+        #countrycode{
+        	height: 40px;
+        	width: 50px;
+        	font-size: 16px;
+        	background: rgb(41, 89, 89);
+        	border: 1px solid #fff;
+        	color: #fff;
+        }
+        .btn{
+        	color: white;
+        	background: rgb(95, 144, 195);
+        	font-size: 25px;
+        	padding: 8px;
+        }
+
+	</style>
+</head>
+<body>
+	
+	<div>
+    <h1>PRODUCT ORDER FORM</h1>
+</div>
+<div class="table">
+	<table style="border: none; border-collapse: collapse;">
+		<form>
+		<tr>
+			<td class="font">FIRST NAME &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : &nbsp </td>
+			<td> <input pattern="[a-zA-Z]{3,9}" required class="input" type="text" value="Your First Name"name=""> </td>
+			<td class="font"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp LAST NAME &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: &nbsp</td>
+			<td><input class="input" pattern="[a-zA-Z]{3,9}" required type="E-MAIL" value="Your Last Name"name=""> </td>
+		</tr>
+		<tr>
+			<td colspan="4" class="font">E-MAIL ADDRESS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input class="input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="E-MAIL" value="Your E-MAIL"name=""></td>
+			
+		</tr>
+		<tr>
+			<td colspan="4" class="font">PHONE NUMBER &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" id="countrycode" value="+91" name=""> <input style="width: 240px;" pattern="[0-9]{10}" required  class="input" type="tel" value="Your Mobile Number"  name=""></td>
+			
+
+		<tr>
+			<td colspan="4" class="font"> BILLING ADDRESS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input class="input" style="width: 800px;" type="text" value="Your Billing Address" name=""> </td>
+		</tr>
+        <tr>
+			<td colspan="4" class="font"> YOUR ADDRESS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input class="input" style="width: 800px;" type="text" value="Your Billing Address" name=""> </td>
+		</tr>
+		<tr >
+			<td class="font">CITY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp :  </td>
+			
+			<td> <input class="input" type="text" value="Your City"name=""> </td>
+			<td class="font"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp STATE/PROVINCE &nbsp&nbsp: &nbsp&nbsp</td>
+			<td><input class="input" type="text" value="Your State/Province"name=""> </td>
+		</tr>
+		<tr > 
+			<td class="font">ZIP CODE &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp :  </td>
+			<td> <input class="input" type="text" value="Your Zip Code"name=""> </td>
+			<td class="font"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp COUNTRY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: &nbsp&nbsp</td>
+			<td><input class="input" type="text" value="Your Country"name=""> </td>
+		</tr>
+        <tr>
+		<td colspan="4" class="font"><input class="btn" style="margin-top: 30px; margin-left: 400px; margin-bottom: 30px;" value="PLACE ORDER" type="submit" name="">
+		<input class="btn" style="background: rgb(165, 147, 63);" value="RESET" type="reset" name=""></td>
+	</tr>
+</form>
+	</table>
+</div>
+</body>
+</html>
