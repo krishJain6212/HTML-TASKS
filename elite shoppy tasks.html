@@ -4,12 +4,116 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Eliite Shoppy</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<style type="text/css">
 		*{
 			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
 		}
+		.contacts{
+			height: 28px;
+			background: black;
+			display: flex;
+			color: rgb(107, 215, 185);
+
+
+ 
+		}
+		.contacts .signin{
+			width: 250px;
+			margin: auto;
+			padding-left: 80px;
+			border-right: 1px solid gray;
+			
+			}
+		.contacts .signup{
+			margin: auto;
+			padding-left: 50px;
+			width: 250px;
+			border-right: 1px solid gray;
+		}	
+		.contacts .call,.mail{
+			margin: auto;
+            width: 250px;
+            border-right: 1px solid gray;
+		}
+		.contacts a{
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.head{
+			height: 95px;
+			display: inline-flex;
+			align-items: center;
+			
+
+
+		}
+		.search{
+
+		}
+		.inp{
+			height: 40px;
+			width: 280px;
+			margin-left: 80px;
+			border: 1px solid black;
+			font-size: 20px;
+		}
+		.search-button{
+			height: 40px;
+			width: 40px;
+			background: rgb(107, 215, 185);
+			border: none;
+			color: #fff;
+			font-size: 20px;
+		}
+		.brand-name{
+            margin-left: 200px;
+            font-size: 60px;
+            display: flex;
+            position: relative;
+
+		}
+		.e{
+			height: 70px;
+			width: 70px;
+			display: flex;
+			background: black;
+			color: #fff;
+			justify-content: center;
+			
+		}
+		.brand-icon{
+			content:  "" ;
+			font-size: 20px;
+			position: absolute;
+			top: 60px;
+			left: 290px;
+			color: rgb(107, 215, 185);
+		}
+		.social-links{
+		display: flex;
+		align-items: center;
+		margin-left: 90px;
+
+		}
+		.social-links p{
+			font-size: 24px;
+		}	
+		.social-icon{
+			height: 35px;
+			width: 35px;
+			display: flex;
+			margin-left: 35px;
+			font-size: 24px;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+		}
+		
+		
 		nav{
 			height: 80px;
 			width: 100%;
@@ -37,7 +141,7 @@
           overflow: hidden;
 
 		}
-		a{
+		li a{
 			font-size: 24px;
 			color: #fff;
 			text-decoration: none;
@@ -45,10 +149,10 @@
 			position: relative;
 			overflow: hidden;
 		}
-		a::after{
+		li a::after{
 			content: "";
 			height: 5px;
-			width: 90px;
+			width: 100%;
 			background: rgb(107, 215, 185);
 			position: absolute;
 			top: 75px;
@@ -56,7 +160,7 @@
 			transition: 0.5s;
 			overflow: hidden;
 		}
-		a:hover::after{
+		li a:hover::after{
 			left: 0%;
 		}
 		 .btn{
@@ -158,6 +262,40 @@
 	</style>
 </head>
 <body>
+	<div class="contacts">
+	       <div class="signin"><i class="fa-solid fa-unlock"></i> <a href="">Sign In</a> </div> 
+	       <div class="signup"><i class="fa-solid fa-pen-to-square"></i> <a href="">Sign Up</a> </div> 
+	       <div class="call"><i class="fa-solid fa-phone"></i> <a href="">Call: 7877394927</a> </div> 
+	       <div class="mail"> <i class="fa-solid fa-envelope"></i><a href="">info@elite.com</a> </div> 
+	</div>
+	<div class="head">
+		<div class="search">
+			<input class="inp" type="text" value="Search here..." name="">
+			<button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+		</div>
+		<div class="brand-name">
+		    <div class="e">E</div>
+		    <p>lite shoppy</p>
+		    <div class="brand-icon"><i class="fa-solid fa-basket-shopping"></i></div>
+		</div>
+		<div class="social-links">
+			<P> Share On:</P>
+			
+               <a style="background: blue; color: #fff;" class="social-icon" href=""><i class="fa-brands fa-facebook-f"></i></a>
+              
+
+               <a style="background: skyblue; color: #fff;" class="social-icon" href=""><i class="fa-brands fa-instagram"></i></a>
+               
+
+               <a style="background: orange; color: #fff;" class="social-icon" href=""><i class="fa-brands fa-twitter"></i></a>	
+              
+
+
+               <a style="background: red; color: #fff;" class="social-icon" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              		
+              			
+		</div>
+	</div>
      <nav>
      	<ul>
      		<li> <a href="">Home</a> </li>
