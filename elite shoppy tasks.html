@@ -413,8 +413,28 @@
          	transition:0.5s ;
          }
              .image:hover::before{
-         	transform: scale(3.0);        
+         	transform: scale(3.0); }       
          
+         .picture2{
+         	display: flex;
+         	justify-content: center;
+         	height: 1000px;
+         	background: gray;
+         	position: relative;
+         }
+         .picture2 .img2{
+         	height: 500px;
+         	width: 800px;
+
+         }
+         .img2::after{
+         	content: "";
+         	background: none;
+         	border: 8px solid #fff;
+         	position: absolute;
+         	top: 0;
+         	left: 0;
+         }
 	</style>
 </head>
 <body>
@@ -493,6 +513,13 @@
       	
       	<button class="secondary"><span style="
       	z-index: 2;">Shop Now</span></button>
+      </div>
+
+
+      <div class="picture2">
+      	
+
+        <img class="img2" src="https://media.istockphoto.com/id/1339264709/photo/flat-lay-with-womans-clothes-and-accessories.jpg?b=1&s=170667a&w=0&k=20&c=QmBv2i2J2uLi6lVxMf3EcZ3iiyg_aygJ_elCuTptGz0=">
       </div>
 
 </body>
